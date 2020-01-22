@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" type="text/javascript"> </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+
+  <!-- menu bar -->
+  <div class="ui menu">
+    <div class="header item">
+      Tests Results Dashboard
+    </div>
+    <a class="item" href="#">
+      Home
+    </a>
+    <a href="tests_overview.html" class="item">
+      Tests Overview
+    </a>
+  </div>
+
+  <!-- Latest Test Run details -->
+  <div class="ui centered grid">
+    <div class="fourteen wide column">
+      <div class="row">
+        <div class="ui blue segment">
+          <div class="column">
+            <div class="ui top right attached blue label">
+              Time: Dec-12-2019 16:00:00:000
+            </div>
+          </div>
+          <div class="column">
+            <h3>Test Package Name</h3>
+            TestRun ID: abc-defghijk-lmn
+          </div>
+          <div class="column">
+            <table class="ui celled table">
+              <thead>
+                <tr>
+                  <th>Target Name</th>
+                  <th>Pass</th>
+                  <th>Fail</th>
+                  <th>Skip</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Target Name">Test Target 1</td>
+                  <td data-label="Pass">10 (50%)</td>
+                  <td data-label="Fail">5 (25%)</td>
+                  <td data-label="Skip">5 (25%)</td>
+                  <td data-label="Total">20</td>
+                </tr>
+                <tr>
+                  <td data-label="Target Name">Test Target 1</td>
+                  <td data-label="Pass">10 (50%)</td>
+                  <td data-label="Fail">5 (25%)</td>
+                  <td data-label="Skip">5 (25%)</td>
+                  <td data-label="Total">20</td>
+                </tr>
+                <tr>
+                  <td data-label="Target Name">Test Target 1</td>
+                  <td data-label="Pass">10 (50%)</td>
+                  <td data-label="Fail">5 (25%)</td>
+                  <td data-label="Skip">5 (25%)</td>
+                  <td data-label="Total">20</td>
+                </tr>
+              </tbody>
+              <tfoot class="full-width">
+                <tr>
+                  <th></th>
+                  <th data-label="Pass">30 (50%)</th>
+                  <th data-label="Fail">15 (25%)</th>
+                  <th data-label="Skip">15 (25%)</th>
+                  <th data-label="Total">60</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Test Run History -->
+    <div class="twelve wide column">
+      <form class="ui form" action="index.html" method="post">
+        <div class="row">
+          <div class="ui blue segment">
+            <div class="column">
+              <div class="ui top right attached blue label">
+                Time: Dec-12-2019 16:00:00:000
+              </div>
+            </div>
+            <div class="column">
+              <h3>Test Package Name</h3>
+              <ul>
+                <li>Test Run ID: abc-defghijk-lmn</li>
+                <li>Total Pass: 10 (50.0%)</li>
+                <li>Total Fail: 5 (25.0%)</li>
+                <li>Total Skipped: 5 (25.0%)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui right attached checkbox">
+              <input id="checkbox" type="checkbox">
+              <label for="checkbox"></label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
